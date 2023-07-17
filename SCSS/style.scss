@@ -103,6 +103,11 @@ header {
             }
         }
 }
+.burgerButton{
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
 main{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -136,14 +141,14 @@ main{
 }
 .footer{
    margin: auto;
-    width: 1400px;
-    height: 200px;
+    width: 90%;
+    height: 100%;
     border-radius: 40px;
     border: 1px solid grey;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
         nav {
             width: 600px;
             height: 50px;
@@ -166,9 +171,11 @@ main{
 }
 .footerPoints{
     width: 100%;
+    height: 100%;
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .footerLocation{
     margin-top: 30px;
@@ -200,7 +207,7 @@ main{
 }
 .footerSearch{
     width: 80px;
-    height: 100%;
+    height: 80px;
     background-color: blue;
     border-radius: 30px;
     cursor: pointer;
@@ -217,4 +224,105 @@ main{
 @media screen and (max-width: 1400px){
     .navBar  ul li a {
         font-size: 20px;
+}
+.navBar button {
+    font-size: 16px;
+    padding: 6px 20px;
+}
+main .sky {
+    margin-top: 140px;
+    width: 1200px;
+    border-radius: 100px;
+    height: 430px;
+}
+@media screen and (max-width: 992px){
+    header nav a {
+        font-size: 18px;
+    }
+    header button {
+        font-size: 16px;
+    }
+    .navBar ul {
+        display: none;
+    }
+    .navBar button {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+    main h1 {
+        font-size: 55px;
+    }
+    main .airPlane {
+        width: 1200px;
+        top:80px;
+    }
+    main .sky {
+        margin-top: 110px;
+        width: 700px;
+        border-radius: 50px;
+        height: 290px;
+    }
+    .footer nav{
+        width: 550px;
+        height: 45px;
+    } 
+    .footer nav button {
+        font-size: 18px;
+    }
+    .burgerButton {
+        display: block;
+    }
+}
+@media screen and (max-width: 830px){
+    header nav a {
+        font-size: 12px;
+    }
+    header button {
+        font-size: 10px;
+    }
+    .navBar ul {
+        display: none;
+    }
+    .navBar button {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+}
+
+
+@media screen and (max-width: 770px){
+    header nav a {
+        font-size: 12px;
+    }
+    header button {
+        font-size: 10px;
+    }
+    .navBar ul {
+        display: none;
+    }
+    .navBar button {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+    main h1 {
+        font-size: 40px;
+    }
+    main .airPlane {
+        width: 1000px;
+        top:80px;
+    }
+    main .sky {
+        margin-top: 110px;
+        width: 500px;
+        border-radius: 50px;
+        height: 250px;
+    }
+    .footer nav{
+        width: 400px;
+        height: 35px;
+    } 
+    .footer nav button {
+        font-size: 12px;
+    }
+    
 }}
