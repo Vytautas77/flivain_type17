@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  color: rgb(57, 65, 62);
+  overflow-x: hidden;
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(185, 210, 202);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .fourSguare {
+  width: 30px;
+}
+header .language img {
+  width: 10px;
+}
+header .language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+}
+header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(57, 65, 62);
+}
+header button {
+  all: unset;
+  border: 1px solid rgb(57, 65, 62);
+  padding: 6px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: rgb(57, 65, 62);
+  color: white;
+}
+
+.navBar {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .flivanLogo h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.navBar .flivanLogo span {
+  font-size: 14px;
+}
+.navBar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+.navBar ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(57, 65, 62);
+}
+.navBar ul li a:hover {
+  font-weight: bold;
+  border-bottom: 2px dashed rgb(57, 65, 62);
+}
+.navBar button {
+  all: unset;
+  border: 1px solid rgb(57, 65, 62);
+  padding: 6px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.navBar button:hover {
+  background-color: rgb(131, 131, 199);
+}
+
+main {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main h1 {
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  text-shadow: 4px 4px 6px white;
+}
+main .airPlane {
+  position: absolute;
+  top: 90px;
+  width: 2000px;
+}
+main .sky {
+  margin-top: 200px;
+  width: 1400px;
+  height: 480px;
+  border-radius: 500px;
+}
+
+.footer {
+  margin: auto;
+  width: 1400px;
+  height: 200px;
+  border-radius: 40px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.footer nav {
+  width: 600px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(185, 210, 202);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer nav button {
+  all: unset;
+  border: 1px solid rgb(57, 65, 62);
+  padding: 6px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  border: none;
+}
+.footer nav button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.footerPoints {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footerLocation {
+  margin-top: 30px;
+  width: 280px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerLocation .footerPoint {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(185, 210, 202);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerLocation .footerPoint img {
+  width: 20px;
+}
+
+.footerInfo p {
+  font-size: 16px;
+}
+
+.footerInfo h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footerSearch {
+  width: 80px;
+  height: 100%;
+  background-color: blue;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerSearch img {
+  width: 40px;
+}
+.footerSearch:hover {
+  background-color: rgb(131, 131, 199);
+}
+
+@media screen and (max-width: 1400px) {
+  .navBar ul li a {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

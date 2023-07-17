@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@mixin aLink {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(57, 65, 62);
+}
+@mixin button {
+    all: unset;
+    border: 1px solid rgb(57, 65, 62);
+    padding: 6px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: rgb(57, 65, 62) ;
+    overflow-x: hidden;
+}
+header {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(185, 210, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        .fourSguare{
+            width: 30px;
+        }
+        .language img{
+            width: 10px;
+        }
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+           @include aLink();
+        }
+        button {
+            @include button();
+            &:hover{
+                background-color: rgb(57, 65, 62);
+                color: white;
+            }
+        }
+}
+.navBar {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        .flivanLogo h3{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .flivanLogo span {
+            font-size: 14px;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+        }
+        ul li a {
+            font-size: 30px;
+            @include  aLink();
+        &:hover {
+            font-weight: bold;
+            border-bottom: 2px dashed rgb(57, 65, 62);
+        }
+        }   
+        button {
+            @include button();
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px 40px;
+            border-radius: 30px;
+            &:hover{
+                background-color: rgb(131, 131, 199);
+            }
+        }
+}
+main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+        h1 {
+            font-size: 80px;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+            text-shadow: 4px 4px 6px white;
+        }
+        .airPlane{
+            position: absolute;
+            top: 90px;
+            width: 2000px;
+        }
+        .sky {
+            margin-top: 200px;
+            width: 1400px;
+            height: 480px;
+            border-radius: 500px;
+        } 
+}
+.footer{
+   margin: auto;
+    width: 1400px;
+    height: 200px;
+    border-radius: 40px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+        nav {
+            width: 600px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: rgb(185, 210, 202);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+              button{
+                @include button();
+                border: none;
+                &:hover{
+                    background-color: blue;
+                    color: white;
+                }
+              }
+        }
+        
+}
+.footerPoints{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.footerLocation{
+    margin-top: 30px;
+    width: 280px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .footerPoint{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(185, 210, 202);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                img{
+                    width: 20px;
+                }
+          
+        }
+}
+.footerInfo p {
+    font-size: 16px;
+}
+.footerInfo h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.footerSearch{
+    width: 80px;
+    height: 100%;
+    background-color: blue;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        img {
+            width: 40px;
+        }
+        &:hover{
+            background-color: rgb(131, 131, 199);
+}}
+
+@media screen and (max-width: 1400px){
+    .navBar  ul li a {
+        font-size: 20px;
+}}
